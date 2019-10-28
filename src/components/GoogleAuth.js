@@ -23,16 +23,12 @@ class GoogleAuth extends React.Component {
       this.props.signOut();
     }
   };
-
   onSignInClick = () => {
     this.auth.signIn();
   };
-
-
   onSignOutClick = () => {
     this.auth.signOut();
   }
-
   renderAuthButton(){
     if(this.props.isSignedIn === null){
       return null;
@@ -54,7 +50,6 @@ class GoogleAuth extends React.Component {
       );
     }
   }
-
   render (){
     return <div> {this.renderAuthButton()} </div>;
   }
@@ -63,8 +58,6 @@ class GoogleAuth extends React.Component {
 const mapStateToProps = (state) => {
   return { isSignedIn: state.auth.isSignedIn};
 };
-
-
 
 export default connect(
   mapStateToProps,
