@@ -6,7 +6,6 @@ import {
   EDIT_STREAM,
   DELETE_STREAM
 } from '../actions/types';
-
 export default (state={}, action ) => {
   switch(action.type){
     case FETCH_STREAMS:
