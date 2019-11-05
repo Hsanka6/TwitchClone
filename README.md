@@ -10,8 +10,11 @@ Streams are connected via an rtmp server using OBS application. Streams are mana
 ## Usage
 
 Create on localhost:3000/streams/new
+
 Read localhost:3000/streams/:id
+
 Update localhost:3000/streams/edit/:id
+
 Delete localhost:3000/streams/delete/:id
 
 See List of streams on localhost:3000/
